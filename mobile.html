@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+       <style>
+           body{background-color:hsl(233, 47%, 7%);
+            height: 100vh;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            background-color: hsl(244, 38%, 16%);
+            display: flex;
+            border-radius: 10px;
+            color: white;
+            width: 70%;
+            margin: auto;
+            max-width: 1050px;
+        }
+        .highlighted{
+            color: hsl(277, 64%, 61%);
+        }
+        .inner{
+            width: 50%;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 0.5em 0.5em 0;
+        }
+        .imagecontainer::before{
+            position: relative;
+        }
+        .imagecontainer::after{
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: hsl(277, 64%, 61%);
+            top: 0;
+            left: 0%;
+            opacity: 0.3;
+            border-radius: 0 0.5em 0.5em 0;
+        }
+        h1{
+            font-size: 1.4em;
+            color: hsl(0, 0%, 100%, 0.6);
+        }
+        p{
+            font-size: 0.8em;
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            font-size: 0.5em;
+            color: hsl(0, 0%, 100%, 0.6);
+            margin-top: 2rem;
+            justify-content: space-between;
+        }
+        .counter{
+            display: block;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 0.3em;
+            color: ivory;
+        }
+       </style>
+        <title> Bosco Preview</title>
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            <div class="container">
+                <div class="inner">
+                    <h1> Get <span class="highlighted"> insights</span> that help
+                     your business grow.</h1>
+                     <p> Discover the benefit of data analystics and make better decisions regarding revevenue,customer
+                          experience and overall efficiecy</p>
+                          <div class="footer">
+                              <div class="companies"><span class="counter">10k+</span> COMPANIES</div>
+                              <div class="templates"><span class="counter">314</span>TEMPLATES</div>
+                              <div class="templates"> <span class="counter"> 12M+</span>QUERIES</div>
+                          </div>
+
+                      </div>  
+                <div class="imagecontainer">
+                    <img src="images/image-header-desktop.jpg" alt="">
+
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+
+</html>
